@@ -1,9 +1,3 @@
-## Đầu đề
-
-Nàng bảo vì tôi mà nàng đập chết gián bằng tay không, tôi mới đùa, giờ mà có rồng bắt giữ mình thì không biết liệu nàng có lao đến đòi thịt nó không? Và đó là một lý do tốt để mở đầu câu chuyện...
-
-Truyện viết trước lúc tôi đi ngủ...
-
 ## Cốt chính
 
 Nữ hiệp sĩ thận trọng bước lên đồi, tay nàng nắm chắc thanh gươm bạc sáng loáng, tay còn lại đem theo khiên chắn đủ che cả người, và mang trên mình bộ giáp phủ vẩy rồng và nhúng đầy phép thuật kháng lửa, kháng độc, kháng đủ thứ trên đời. Nàng lấy hơi và thét lớn.
@@ -43,14 +37,6 @@ Nó bước chậm về phía nàng, đầu tóc xoã xù lên, thì thầm, m�
 ## Phương án 1
 
 "Bởi vì y là vật hiến tế."
-
-"Vật hiến tế?"
-
-"Đúng, y là vật hiến tế cho con, kẻ đã tắm máu 50 con rồng, và sẽ trở thành một con rồng mang đầy hung nộ, tiêu diệt toàn bộ loài người. Còn y, sẽ là phần ăn của con, là chiếc vé đưa con tới sự bất tử, đưa con tới đỉnh của chuỗi thức ăn. Nghe này Arias, cơ hội này chỉ có một thôi, hãy trả thù cho mẹ và các anh chị em của con."
-
-### Phương án 1.1: Bẻ cổ mẹ
-
-### Phương án 1.2: Làm theo lời mẹ
 
 ## Phương án 2
 
