@@ -2,6 +2,8 @@
 
 Nàng bảo vì tôi mà nàng đập chết gián bằng tay không, tôi mới đùa, giờ mà có rồng bắt giữ mình thì không biết liệu nàng có lao đến đòi thịt nó không? Và đó là một lý do tốt để mở đầu câu chuyện...
 
+Truyện viết trước lúc tôi đi ngủ...
+
 ## Cốt chính
 
 Nữ hiệp sĩ thận trọng bước lên đồi, tay nàng nắm chắc thanh gươm bạc sáng loáng, tay còn lại đem theo khiên chắn đủ che cả người, và mang trên mình bộ giáp phủ vẩy rồng và nhúng đầy phép thuật kháng lửa, kháng độc, kháng đủ thứ trên đời. Nàng lấy hơi và thét lớn.
