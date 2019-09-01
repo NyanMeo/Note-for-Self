@@ -62,10 +62,22 @@ Potter chĩa ủng lấp đầy đất ra trước mặt Draco, hắn ra lệnh 
 
 "Vâng... ư ư... thưa... chúa tể..." Y yếu ớt, hổn hển. Y gắng gượng dậy, run run, hạ mình và lè lưỡi, toan liếm lấy đống đất bẩn thỉu.
 
-ĐÉT! Mông y nảy lên, người y giật bắn cả lên, đau điến. Dù không còn sức để nói, y vẫn rên như mấy con đàn bà mà Voldemort đã tra tấn trước lúc để Nagini lót dạ. Cứ thế, nhiều cú đánh nữa dán vào mông y cho đến khi chúng lằn lên bằng kích thước bàn tay Potter.
+ĐÉT! Mông y nảy lên, người y giật bắn cả lên, đau điếng. Dù không còn sức để nói, y vẫn rên như mấy con đàn bà mà Voldemort đã tra tấn trước lúc để Nagini lót dạ. Cứ thế, nhiều cú đánh nữa dán vào mông y cho đến khi chúng lằn lên bằng kích thước bàn tay Potter.
 
 "Chúa... tể..." Y run run, chưa lúc nào lại khúm núm thế này. Mắt y ươn ướt, dịch trắng đổ đầy sàn.
 
 "Cái lưỡi gợi tình này mà để liếm đất thì phí lắm!" Nói đoạn, Potter lột bỏ áo choàng, rồi đến những lớp vải thừa thãi trên người.
 
 Mắt y bỗng long lanh, đôi mắt ấy sáng lên, như thể vừa làm hài lòng ai đó và được tưởng thưởng. Phải, tiếp tục đi, thoả mãn em đi chúa tể.
+
+Những tưởng được mần thịt, chúa tể Potter chỉ cởi bớt cho đỡ vướng. Ngài chìa đôi bàn chân vào mặt y, kêu y mút từng đầu ngón chân, trong khi bảo y lật người lại cho ngài tiện mơn trớn.
+
+Y lệnh ngài, y tóm lấy bàn chân, liếm qua từng kẽ ngón, mút và lướt qua các ngón chân. Khi đầu lưỡi y chạm vào cái cục đen sì, ghét bẩn, két vào ở kẽ móng với thịt, cái mùi chua tanh sộc lên mũi khiến y muốn xỉu. Nhưng lạ thay, càng liếm, y càng hứng và càng muốn liếm nhiều hơn, lưỡi y lách cả vào cái chỗ móng thịt bẩn thỉu ấy. Y muốn phục vụ ngài, muốn thoả mãn ngài, và y muốn được ngài cho phép để được sướng hơn.
+
+Dường như không thể đánh giá một cuốn sách bằng tấm bìa da bọc nó, vẻ ngoài đạo mạo của Potter chỉ để che giấu độ dâm loạn bên trong của hắn. Chúa tể mới của Draco miết bàn tay quanh thân thể y, từ quanh xương quai xanh, xuống đến đầu ti. Potter không ngừng thoa quanh đầu vú, trước khi nhéo vào giữa núm, ngài không chỉ véo mà còn cấu, ghì, khiến cho đầu ti của Draco sưng tấy, đỏ mẩn lên hoà cùng độc dược mà Potter pha, khiến y không khỏi hứng tình. Y thèm lắm rồi, nhưng luõi vẫn chưa rời khòi các ngón chân của chúa tể. Y chỉ dám ư ử trong cổ họng, y sợ, đúng, y sợ Potter hơn cả cách Chúa tể Voldermort lườm y. Và y muốn phục tùng ngài.
+
+Sức nặng và từng đợt mơn trớn, quện với mùi hôi tanh của cục bựa kẹt trong móng chân của chúa tể Potter khiến y nóng người, run lẩy bẩy, y cảm giác chỗ dưới đó đang cong lên, cứng ngắc. Và không phải chỉ y thấy vậy, cả chúa tể mới của y cũng trông thấy tương tự. Mặt Potter đanh lại, ngài rút chân ra khỏi miệng của Draco, nước bọt vẫn thành một vệt kéo dài từ ngón chân ngài tới đầu lưỡi của y. Không lẽ, y đã làm gì sai sao? À phải rồi... nước đã nhễu ra kha khá, có vẻ như thành vũng to, y cảm thấy thế vì đùi trong của y khá ấm, và ươn ướt. Y lo lắng, y sốt sắng, y hoảng hốt... y sợ... những đòn tra tấn mới của chúa tể.
+
+Và điều y muốn đã xảy ra, Potter búng vào con ciu trắng muốt run rẩy ấy, búng rồi cuộn tay lại quanh nó và sóc thật lực. Tay phải Potter lướt trên thân ciu, tay trái đan vào giữa hai hạt bi, mân mê nó. Con ciu ấy cứ thế, mỗi lúc một phồng to lên, căng ra, các dây thần kinh, các đường mạch máu nổi bật lên, gân guốc. Y sắp ra, phải, chúa tể, làm ơn cho em ra, làm ơn... y mong ngóng như thể mong ngóng ông Malfoy mua cho mình chiếc chổi bay 2001. Trái với sự mong ngóng ấy, y cảm nhận chất lỏng gì đó chảy trên dương vật mình, và một chút tia loé sáng ở đầu đũa phép.
+
+"Từ giờ sẽ chỉ có ta mới có thể làm mi ra." Potter quay lại, mỉm cười. 
