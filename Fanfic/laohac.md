@@ -42,7 +42,47 @@ Lão Hạc vung hai cánh tay gầy guộc lên, ôm choàng lấy cậu Vàng, 
 
 ---
 
-_(cumming soon)_
+Cái chõng tre rung lên, kẽo cà kẽo kẹt. Thường chỉ có con trẻ mới nghiến răng hàng đêm, song cái sự đói khiến nhà ai cũng vang lên như thế, thành thử dân làng cũng kệ, chả quan tâm gì, lo sao mai có cái gì bỏ vào mồm.
+
+Cái chõng vẫn rung, ngoài âm thanh từ những thành phần đã cũ kĩ theo thời gian, còn tiếng thở, tiếng rên hồng hộc. Tiếng nước dãi văng tung toé, hay âm thanh vang động khi thịt chà vào thịt, thịt miết lên thịt, thịt lổn nhổn trong thịt.
+
+Cậu Vàng đang đóng thật lực vào bên trong cái lỗ nhăn nheo co nhúm của lão Hạc. Cậu đẩy nhanh và dồn dập vào bên trong, cùng lúc chống hai chân trước lên lưng lão Hạc để giữ mình không bị tuột. Lão Hạc quỳ gối xuống manh chiếu rách, tay chống vào tường ở đầu chõng, cả thân dưới cố vươn ra sau để đón nhận từng cú giã nhịp nhàng.
+
+Bản mặt rầu rĩ, nhăn nhúm thường ngày mà lão Hạc trưng ra cho bàn dân thiên hạ đột nhiên biến đâu mất, những nếp nhăn như dãn đều ra, mặt lão sáng và vui hơn bao giờ hết.
+
+Lưỡi cậu Vàng thè xuống, hông cậu đẩy chậm lại, đủ để cổ lão quay lại và hai con-người ấy hôn nhau. Lưỡi cậu Vàng dài và to bản cuộn lấy lưỡi nhỏ và mỏng của lão Hạc. Lưỡi cậu đảo quanh, nước dãi chó chảy từ miệng cậu vào miệng lão, nhiều tới độ trôi ra ngoài mép. Hai ông con vẫn cuốn lưỡi với nhau không dời.
+
+Rồi lão Hạc quay người lại, lão cố nhích từng chút một, tay lão ôm lấy cổ cậu Vàng. Chẳng mấy chốc, lão đã thay từ thế chống sau sang thế của con người, hai ông con đối diện với nhau. Nhận thấy thay đổi, cậu Vàng nhả miệng lão ra.
+
+"Sao lão..."
+
+Cậu Vàng chưa kịp nói hết câu, lão Hạc chồm lên và kéo cổ cậu xuống, vừa kéo vừa thè lưỡi quấn lấy lưỡi cậu. Hai tay lão siết lấy lưng cậu, ghì cậu xuống. Chỏm lông bụng của cậu Vàng chạm vào cái bụng lẹp kép của lão Hạc, hơi ấm lan tràn giữa hai ông con, cổ họng cậu rung lên, ư ử.
+
+Được một lúc, lão mới buông cổ cậu ra, nhìn cậu trìu mến.
+
+"Lần này là lần cuối, lão muốn cậu làm cho ra dáng con người."
+
+Dường như có gì đó ươn ướt rơi lên gò má lão, nóng nhưng không lêu nhêu như dãi. Trước khi lão định nói gì thêm, cậu Vàng lao đến, cặc cậu đâm ngập đến tận bi. Lần này nhanh và mạnh hơn, dãi nhớt nhễu đầy mặt lão. Nhưng lão vẫn không đổi sắc mặt, vẫn nhìn cậu đầy trìu mến như thế.
+
+Đột nhiên lão thấy âm ấm, ôi không, cậu Vàng đang ra. Và cả cậu Vàng cũng thấy bất ngờ, trước giờ nào có ra bên trong như này, bởi cả cậu và lão đều biết chó khi xuất tinh sẽ thế nào. Cậu mắc lẹo.
+
+Cậu hốt hoảng, cậu vội vã đẩy thêm vào, cậu sợ lão Hạc đau. Lão dựng dậy, ôm lấy cậu, vuốt ve lông từ đầu đến lưng cậu. Cái lẹo không biến mất ngay, nhưng lòng cậu thấy bình an lạ thường.
+
+"Lão quý cậu nhất, cậu Vàng ơi. Cơn đau này làm sao sánh được với ngày mai cơ chứ."
+
+Lão rưng rưng, cậu cũng lăn dài. Hai con-người đó cứ ôm nhau cho tới khi cặc cậu Vàng chui ra khỏi cửa hậu của lão. Chất dịch nhờ nhợ cũng rỉ ra theo, cái mùi ngai ngái bốc lên khắp phòng.
+
+Lão luồn tay xuống, vuốt lên cặc cậu. Nó vẫn cứng và nhọn hoắt, dịch nhớt vẫn đọng lại xung quanh.
+
+"Cậu vẫn sung quá, để lão giúp..."
+
+Nói đoạn, lão Hạc bế xốc cậu Vàng lên và hướng cặc cậu vào miệng lão. Lưỡi lão quấn quanh cái đầu nấm ửng đỏ, đầu lão nhấp nhô. Cậu Vàng bắt đầu rên rỉ, rồi cậu khẽ tru lên, miệng lão lại ngập trong chất dịch trắng nhờ đó. Lão ho sù sụ, nước mắt trào dâng.
+
+"Lão Hạc, nếu lão không muốn thì..."
+
+"Đừng nói vậy, đêm nay là đêm cuối của ta. Và cậu vẫn còn cứng thế này. Hãy để tôi giúp cậu thư giãn nốt đêm nay."
+
+Rồi lão chổng mông về phía cậu, ra dấu cho cậu đẩy tiếp.
 
 ---
 
