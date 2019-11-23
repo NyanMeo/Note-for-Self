@@ -160,4 +160,4 @@ Phải rồi. Anh nhớ lại về con số 9 định mệnh. Anh nhấc quyển
 
 ---
 
-Tôi viết truyện này vào một tối đêm muộn, gần sáng, với một bạn nữ khá đáng yêu (). Hầu như nhiều đoạn đều là sao chép lại từ tin nhắn của tôi nên có thể không được kết nối gắn chắc cho lắm.
+Tôi viết truyện này vào một tối đêm muộn, gần sáng, với một bạn nữ khá đáng yêu (JeanScott). Hầu như nhiều đoạn đều là sao chép lại từ tin nhắn của tôi nên có thể không được kết nối gắn chắc cho lắm.
