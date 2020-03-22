@@ -12,63 +12,114 @@
 <body>
   <div class="container">
     <h2>Tool sinh mã HTML</h2>
-    <p>Vui lòng nhập đầy đủ vào các input bên dưới. Thông thường mục lục sẽ giữ nguyên, còn lại sẽ bị thay đổi.</p>
-    <div class="alert alert-danger alert-dismissible" id="error" style="display: none;">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <strong>Cảnh báo!</strong> Yêu cầu nhập đầy đủ link.
+    <div class="row">
+      <div class="col-sm-6">
+        <p>Vui lòng nhập đầy đủ vào các input bên dưới. Thông thường mục lục sẽ giữ nguyên, còn lại sẽ bị thay đổi.</p>
+      </div>
+      <div class="col-sm-6">
+        <p>Template là mẫu để sinh, có thể thay đổi mẫu nhưng bắt buộc phải có 3 thuộc tính: "link__chapterBefore",
+          "link__tableOfContent", "link__chapterAfter"</p>
+      </div>
+      <div class="col-sm-6">
+        <div class="alert alert-danger alert-dismissible" id="errorLink" style="display: none;">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Cảnh báo!</strong> Yêu cầu nhập đầy đủ link.
+        </div>
+        <div class="form-group">
+          <label for="tableOfContent">Mục lục</label>
+          <input type="text" class="form-control" id="tableOfContent" placeholder="Điền link mục lục vào đây" />
+        </div>
+        <div class="form-group">
+          <label for="chapterBefore">Chương trước</label>
+          <input type="text" class="form-control" id="chapterBefore" placeholder="Điền link chương trước vào đây" />
+        </div>
+        <div class="form-group">
+          <label for="chapterAfter">Chương sau</label>
+          <input type="text" class="form-control" id="chapterAfter" placeholder="Điền link chương sau vào đây" />
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="alert alert-danger alert-dismissible" id="errorTemplate" style="display: none;">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Cảnh báo!</strong> Yêu cầu không bỏ trống template.
+        </div>
+        <div class="alert alert-danger alert-dismissible" id="errorTemplate__essential" style="display: none;">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Cảnh báo!</strong> Template thiếu thành phần cần thiết.
+        </div>
+        <div class="form-group">
+          <label for="template">Template</label>
+          <textarea class="form-control" rows="8" id="template" placeholder="Nhập template cho hàm sinh vào đây">
+            <p style="text-align:center;"><a style="color:#fcfcfc;margin-right:5px;"
+              href="link__chapterBefore"><span
+                style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">◄</span></a> <a
+              style="color:#fcfcfc;margin-right:5px;" href="link__tableOfContent"><span
+                style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">Mục lục</span></a> <a
+              style="color:#fcfcfc;margin-right:5px;" href="link__chapterAfter"><span
+                style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">►</span></a></p>
+          </textarea>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <button type="button" class="btn btn-primary" onclick="genHTMLCode()">Xác nhận</button>
+        <button type="button" class="btn btn-default" onclick="copyToClipboard()">Sao chép kết quả</button>
+        <button type="button" class="btn btn-danger" onclick="resetAllInput()">Reset All</button>
+        <hr>
+        <div class="form-group">
+          <label for="genCodeArea">Kết quả:</label>
+          <textarea class="form-control" rows="10" id="genCodeArea" placeholder="HTML gen ra ở đây"></textarea>
+        </div>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="tableOfContent">Mục lục</label>
-      <input type="text" class="form-control" id="tableOfContent" placeholder="Điền link mục lục vào đây" />
-    </div>
-    <div class="form-group">
-      <label for="chapterBefore">Chương trước</label>
-      <input type="text" class="form-control" id="chapterBefore" placeholder="Điền link chương trước vào đây" />
-    </div>
-    <div class="form-group">
-      <label for="chapterAfter">Chương sau</label>
-      <input type="text" class="form-control" id="chapterAfter" placeholder="Điền link chương sau vào đây" />
-    </div>
-    <button type="button" class="btn btn-primary" onclick="genHTMLCode()">Xác nhận</button>
-    <button type="button" class="btn btn-default" onclick="copyToClipboard()">Sao chép kết quả</button>
-    <hr>
-    <div class="form-group">
-      <label for="genCodeArea">Kết quả:</label>
-      <textarea class="form-control" rows="10" id="genCodeArea" placeholder="HTML gen ra ở đây"></textarea>
-    </div>
-    <label id="error" style="display: none;"></label>
   </div>
   <script>
     function genHTMLCode() {
       const tableOfContent = $("#tableOfContent").val(),
         chapterBefore = $("#chapterBefore").val(),
         chapterAfter = $("#chapterAfter").val(),
+        template = $("#template").val(),
         genCodeArea = $("#genCodeArea"),
-        error = $("#error");
+        errorLink = $("#errorLink"),
+        errorTemplate = $("#errorTemplate"),
+        errorTemplate__essential = $("#errorTemplate__essential");
+
+      const tableOfContentStyle = $("#tableOfContent__Style").val();
       if (tableOfContent && chapterBefore && chapterAfter) {
-        error.hide();
-        genCodeArea.text(`<p style="text-align:center;"><a style="color:#fcfcfc;margin-right:5px;"
-    href="${chapterBefore}"><span
-      style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">◄</span></a> <a
-    style="color:#fcfcfc;margin-right:5px;" href="${tableOfContent}"><span
-      style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">Mục lục</span></a> <a
-    style="color:#fcfcfc;margin-right:5px;" href="${chapterAfter}"><span
-      style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">►</span></a></p>`);
-        $("#chapterBefore").empty();
-        $("#chapterAfter").empty();
+        errorLink.hide();
+        if (template) {
+          errorTemplate.hide();
+          if (template.indexOf("link__") > -1) {
+            errorTemplate__essential.hide();
+            let result = template.replace("link__chapterBefore", chapterBefore);
+            result = result.replace("link__tableOfContent", tableOfContent);
+            result = result.replace("link__chapterAfter", chapterAfter);
+            genCodeArea.text(result);
+            $("#chapterBefore").val("");
+            $("#chapterAfter").val("");
+          } else {
+            errorTemplate__essential.show();
+          }
+        } else {
+          errorTemplate.show();
+        }
       } else {
-        error.show();
+        errorLink.show();
       }
     }
     function copyToClipboard() {
       const genCodeArea = $("#genCodeArea");
-      if (genCodeArea.val()){
+      if (genCodeArea.val()) {
         genCodeArea.select();
         document.execCommand("copy");
       }
       else {
         alert('Không có gì để sao chép cả :(');
       }
+    }
+    function resetAllInput() {
+      $("#tableOfContent").val("");
+      $("#chapterBefore").val("");
+      $("#chapterAfter").val("");
     }
   </script>
 </body>
