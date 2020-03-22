@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gen Footer for Manh</title>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <script src="./jquery-1-12-4.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Tool sinh mã HTML</h2>
+    <p>Vui lòng nhập đầy đủ vào các input bên dưới. Thông thường mục lục sẽ giữ nguyên, còn lại sẽ bị thay đổi.</p>
+    <div class="alert alert-danger alert-dismissible" id="error" style="display: none;">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Cảnh báo!</strong> Yêu cầu nhập đầy đủ link.
+    </div>
+    <div class="form-group">
+      <label for="tableOfContent">Mục lục</label>
+      <input type="text" class="form-control" id="tableOfContent" placeholder="Điền link mục lục vào đây" />
+    </div>
+    <div class="form-group">
+      <label for="chapterBefore">Chương trước</label>
+      <input type="text" class="form-control" id="chapterBefore" placeholder="Điền link chương trước vào đây" />
+    </div>
+    <div class="form-group">
+      <label for="chapterAfter">Chương sau</label>
+      <input type="text" class="form-control" id="chapterAfter" placeholder="Điền link chương sau vào đây" />
+    </div>
+    <button type="button" class="btn btn-primary" onclick="genHTMLCode()">Xác nhận</button>
+    <button type="button" class="btn btn-default" onclick="copyToClipboard()">Sao chép kết quả</button>
+    <hr>
+    <div class="form-group">
+      <label for="genCodeArea">Kết quả:</label>
+      <textarea class="form-control" rows="10" id="genCodeArea" placeholder="HTML gen ra ở đây"></textarea>
+    </div>
+    <label id="error" style="display: none;"></label>
+  </div>
+  <script>
+    function genHTMLCode() {
+      const tableOfContent = $("#tableOfContent").val(),
+        chapterBefore = $("#chapterBefore").val(),
+        chapterAfter = $("#chapterAfter").val(),
+        genCodeArea = $("#genCodeArea"),
+        error = $("#error");
+      if (tableOfContent && chapterBefore && chapterAfter) {
+        error.hide();
+        genCodeArea.text(`<p style="text-align:center;"><a style="color:#fcfcfc;margin-right:5px;"
+    href="${chapterBefore}"><span
+      style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">◄</span></a> <a
+    style="color:#fcfcfc;margin-right:5px;" href="${tableOfContent}"><span
+      style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">Mục lục</span></a> <a
+    style="color:#fcfcfc;margin-right:5px;" href="${chapterAfter}"><span
+      style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">►</span></a></p>`);
+        $("#chapterBefore").empty();
+        $("#chapterAfter").empty();
+      } else {
+        error.show();
+      }
+    }
+    function copyToClipboard() {
+      const genCodeArea = $("#genCodeArea");
+      if (genCodeArea.val()){
+        genCodeArea.select();
+        document.execCommand("copy");
+      }
+      else {
+        alert('Không có gì để sao chép cả :(');
+      }
+    }
+  </script>
+</body>
+
+</html>
