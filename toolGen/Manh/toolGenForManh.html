@@ -2,47 +2,36 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gen Footer for Manh</title>
-  <link rel="stylesheet" href="./bootstrap.min.css">
-  <link rel="stylesheet" href="./introjs.min.css">
+  <link rel="stylesheet" href="./bootstrap.min.css" />
+  <link rel="stylesheet" href="./introjs.min.css" />
   <script src="./jquery-1-12-4.min.js"></script>
+  <script src="./bootstrap.min.js"></script>
   <script src="./intro.min.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <h2>Tool sinh mã HTML <button class="btn btn-link"
-        onclick="introJs().setOptions({'nextLabel': 'Tiếp theo', 'prevLabel': 'Quay lại', 'skipLabel': 'Bỏ qua', doneLabel: 'Xong'}).start()">Hướng
-        dẫn</button></h2>
-    <div class="row">
-      <div class="col-sm-6">
-        <p>Vui lòng nhập đầy đủ vào các input bên dưới. Thông thường mục lục sẽ giữ nguyên, còn lại sẽ bị thay đổi.</p>
-      </div>
-      <div class="col-sm-6">
-        <p>Template là mẫu để sinh, có thể thay đổi mẫu nhưng bắt buộc phải có 3 thuộc tính: "link__chapterBefore",
-          "link__tableOfContent", "link__chapterAfter"</p>
-      </div>
-      <div class="col-sm-6" data-intro="Đầu tiên Manh đầy đủ 3 đường link dưới này nhé" data-step="1">
-        <div class="alert alert-danger alert-dismissible" id="errorLink" style="display: none;">
-          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-          <strong>Cảnh báo!</strong> Yêu cầu nhập đầy đủ link.
-        </div>
-        <div class="form-group">
-          <label for="tableOfContent">Mục lục</label>
-          <input type="text" class="form-control" id="tableOfContent" placeholder="Điền link mục lục vào đây" />
-        </div>
-        <div class="form-group">
-          <label for="chapterBefore">Chương trước</label>
-          <input type="text" class="form-control" id="chapterBefore" placeholder="Điền link chương trước vào đây" />
-        </div>
-        <div class="form-group">
-          <label for="chapterAfter">Chương sau</label>
-          <input type="text" class="form-control" id="chapterAfter" placeholder="Điền link chương sau vào đây" />
-        </div>
-      </div>
-      <div class="col-sm-6" data-intro="Kế đến thay đổi mẫu ở đây nha, nhớ đọc ghi chú đó" data-step="2">
+    <h2>
+      Tool sinh mã HTML
+      <button class="btn btn-link"
+        onclick="introJs().setOptions({'nextLabel': 'Tiếp theo', 'prevLabel': 'Quay lại', 'skipLabel': 'Bỏ qua', doneLabel: 'Xong'}).start()">
+        Hướng dẫn
+      </button>
+      <button class="btn btn-link" data-toggle="collapse" data-target="#template__container"
+        data-intro="Nếu cẩn thay đổi mẫu thì nhấn vào đây, nhớ đọc ghi chú đó" data-step="2">
+        Template
+      </button>
+    </h2>
+    <div class="row collapse" id="template__container">
+      <div class="col-sm-12">
+        <p>
+          Template là mẫu để sinh, có thể thay đổi mẫu nhưng bắt buộc phải có
+          3 thuộc tính: "link__chapterBefore", "link__tableOfContent",
+          "link__chapterAfter"
+        </p>
         <div class="alert alert-danger alert-dismissible" id="errorTemplate" style="display: none;">
           <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
           <strong>Cảnh báo!</strong> Yêu cầu không bỏ trống template.
@@ -54,32 +43,104 @@
         <div class="form-group">
           <label for="template">Template</label>
           <textarea class="form-control" rows="8" id="template" placeholder="Nhập template cho hàm sinh vào đây">
-            <p style="text-align:center;"><a style="color:#fcfcfc;margin-right:5px;"
-              href="link__chapterBefore"><span
-                style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">◄</span></a> <a
-              style="color:#fcfcfc;margin-right:5px;" href="link__tableOfContent"><span
-                style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">Mục lục</span></a> <a
-              style="color:#fcfcfc;margin-right:5px;" href="link__chapterAfter"><span
-                style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">►</span></a></p>
-          </textarea>
+                <p style="text-align:center;"><a style="color:#fcfcfc;margin-right:5px;"
+                  href="link__chapterBefore"><span
+                    style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">◄</span></a> <a
+                  style="color:#fcfcfc;margin-right:5px;" href="link__tableOfContent"><span
+                    style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">Mục lục</span></a> <a
+                  style="color:#fcfcfc;margin-right:5px;" href="link__chapterAfter"><span
+                    style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">►</span></a></p>
+              </textarea>
         </div>
       </div>
-      <div class="col-sm-12">
-        <button type="button" class="btn btn-primary" onclick="genHTMLCode()"
-          data-intro="Sau đó nhấn nút này để sinh HTML" data-step="3">Xác nhận</button>
-        <button type="button" class="btn btn-default" onclick="copyToClipboard()"
-          data-intro="Nhấn nút này để sao chép kết quả vào bộ đệm" data-step="4">Sao chép kết quả</button>
-        <button type="button" class="btn btn-danger" onclick="resetAllInput()"
-          data-intro="Nếu muốn xoá hết đầu vào (trừ mẫu) thì nhấn nút này" data-step="5">Reset All</button>
-        <hr>
-        <div class="form-group">
-          <label for="genCodeArea">Kết quả:</label>
-          <textarea class="form-control" rows="10" id="genCodeArea" placeholder="HTML gen ra ở đây"></textarea>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12" data-intro="Đầu tiên Manh đầy đủ 3 đường link dưới này nhé" data-step="1">
+        <p>
+          Vui lòng nhập đầy đủ vào các input bên dưới. Thông thường mục lục sẽ
+          giữ nguyên, còn lại sẽ bị thay đổi.
+        </p>
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a data-toggle="tab" href="#menu1">Thủ công</a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#menu2">Hàng loạt</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="menu1" class="tab-pane fade in active">
+            <p>Thường dùng cho truyện mới.</p>
+
+            <div class="alert alert-danger alert-dismissible" id="errorLink" style="display: none;">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Cảnh báo!</strong> Yêu cầu nhập đầy đủ link.
+            </div>
+            <div class="form-group">
+              <label for="tableOfContent">Mục lục*</label>
+              <input type="text" class="form-control" id="tableOfContent" placeholder="Điền link mục lục vào đây" />
+            </div>
+            <div class="form-group">
+              <label for="chapterBefore">Chương trước*</label>
+              <input type="text" class="form-control" id="chapterBefore" placeholder="Điền link chương trước vào đây" />
+            </div>
+            <div class="form-group">
+              <label for="chapterAfter">Chương sau*</label>
+              <input type="text" class="form-control" id="chapterAfter" placeholder="Điền link chương sau vào đây" />
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="genHTMLCode()"
+              data-intro="Sau đó nhấn nút này để sinh HTML" data-step="3">
+              Xác nhận
+            </button>
+            <button type="button" class="btn btn-default" onclick="copyToClipboard()"
+              data-intro="Nhấn nút này để sao chép kết quả vào bộ đệm" data-step="4">
+              Sao chép kết quả
+            </button>
+            <button type="button" class="btn btn-danger" onclick="resetAllInput()"
+              data-intro="Nếu muốn xoá hết đầu vào (trừ mẫu) thì nhấn nút này" data-step="5">
+              Reset All
+            </button>
+            <hr />
+            <div class="form-group" id="genCodeContainer__once">
+              <label for="genCodeArea">Kết quả:</label>
+              <textarea class="form-control" rows="10" id="genCodeArea" placeholder="HTML gen ra ở đây"></textarea>
+            </div>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <p>Dùng cho truyện đã hoàn hoặc chưa được dập khuôn.</p>
+
+            <div class="form-group">
+              <label for="tableOfContent_bulk">Mục lục*</label>
+              <input type="text" class="form-control" id="tableOfContent_bulk"
+                placeholder="Điền link mục lục vào đây" />
+            </div>
+            <div class="form-group">
+              <label for="slug_bulk">Slug*</label>
+              <input type="text" class="form-control" id="slug_bulk"
+                placeholder="Điền slug cho link muốn tách vào đây" />
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="genBaseLink()">
+              Xác nhận
+            </button>
+            <button type="button" class="btn btn-default" onclick="toggleShowAll()">
+              Hiện/Ẩn tất cả
+            </button>
+            <button type="button" class="btn btn-danger" onclick="resetAllInput()">
+              Reset All
+            </button>
+            <hr />
+            <div class="form-group" id="genCodeContainer__bulk"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <script>
+    var tabKey = 1;
+
     function genHTMLCode() {
       const tableOfContent = $("#tableOfContent").val(),
         chapterBefore = $("#chapterBefore").val(),
@@ -97,10 +158,13 @@
           errorTemplate.hide();
           if (template.indexOf("link__") > -1) {
             errorTemplate__essential.hide();
-            let result = template.replace("link__chapterBefore", chapterBefore);
+            let result = template.replace(
+              "link__chapterBefore",
+              chapterBefore
+            );
             result = result.replace("link__tableOfContent", tableOfContent);
             result = result.replace("link__chapterAfter", chapterAfter);
-            genCodeArea.text(result);
+            genCodeArea.html(result);
             $("#chapterBefore").val("");
             $("#chapterAfter").val("");
           } else {
@@ -118,15 +182,123 @@
       if (genCodeArea.val()) {
         genCodeArea.select();
         document.execCommand("copy");
-      }
-      else {
-        alert('Không có gì để sao chép cả :(');
+      } else {
+        alert("Không có gì để sao chép cả :(");
       }
     }
     function resetAllInput() {
       $("#tableOfContent").val("");
       $("#chapterBefore").val("");
       $("#chapterAfter").val("");
+      $("#genCodeArea").empty();
+    }
+
+    function onSubmitAction() {
+      switch (tabKey) {
+        case 1:
+          genHTMLCode();
+          break;
+        case 2:
+          genBaseLink();
+          break;
+        default:
+          break;
+      }
+    }
+
+    function genBaseLink() {
+      const link = $("#tableOfContent_bulk").val(),
+        slug = $("#slug_bulk").val(),
+        template = $("#template").val(),
+        genCodeArea = $("#genCodeArea"),
+        genCodeContainer = $("#genCodeContainer__bulk");
+      if (link && slug) {
+        AjaxCall(
+          "https://public-api.wordpress.com/rest/v1.1/sites/vivi3010.wordpress.com/posts/slug:" +
+          link
+            .split("/")
+            .filter(part => part !== "")
+            .pop(),
+          "get",
+          null,
+          function (rs) {
+            genCodeArea.hide();
+            const sameSlugArray = rs.content
+              .match(/(https?:\/\/[^\s"]+)/gm)
+              .filter(x => x.indexOf(slug) > -1);
+
+            if (sameSlugArray.length > 0) {
+              for (let i = 0; i < sameSlugArray.length - 1; i++) {
+                let result = template.replace(
+                  "link__chapterBefore",
+                  sameSlugArray[i]
+                );
+                result = result.replace("link__tableOfContent", link);
+                result = result.replace(
+                  "link__chapterAfter",
+                  sameSlugArray[i + 1]
+                );
+                genCodeContainer.append(`<div class="col-sm-6">
+                <label>Chương ${i + 1}</label>
+                <button class="btn btn-sm btn-primary" onclick="toggleShow(this)">Hiện/Ẩn</button>
+                <button class="btn btn-sm btn-default" onclick="copyToClipboardMini(this)">Sao chép</button>
+                <textarea class="form-control bulk-togglable" rows="5">${result}</textarea>
+              </div>`);
+              }
+            }
+          }
+        );
+      }
+    }
+
+    //helpers
+    function changeFocusTab(key = 1) {
+      tabKey = key;
+    }
+    function AjaxCall(url, type, data, callback, callbackError) {
+      var isfunction = callback && typeof callback == "function";
+      if (!isfunction) {
+        callback = function () {
+          console.log("Chưa cài đặt sự kiện thành công");
+        };
+      }
+      var isfunction = callbackError && typeof callbackError == "function";
+      if (!isfunction) {
+        callbackError = function () {
+          console.log("Thao tác không thực hiện được");
+        };
+      }
+      $.ajax({
+        url: url,
+        type: type,
+        data: data,
+        success: callback,
+        error: callbackError
+      });
+    }
+    function copyToClipboardMini(el) {
+      $(el)
+        .siblings("textarea")
+        .select();
+      document.execCommand("copy");
+    }
+    var isToggleAll = false;
+    function toggleShowAll() {
+      if (!isToggleAll) {
+        $("textarea.bulk-togglable").addClass("collapse");
+      }
+      else {
+        $("textarea.bulk-togglable").removeClass("collapse");
+      }
+      isToggleAll = !isToggleAll;
+    }
+    function toggleShow(el) {
+      const textarea = $(el).siblings("textarea");
+      if (textarea.hasClass("collapse")) {
+        textarea.removeClass("collapse");
+      } else {
+        textarea.addClass("collapse");
+      }
     }
   </script>
 </body>
