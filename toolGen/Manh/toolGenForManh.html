@@ -253,7 +253,7 @@
                 }
 
                 genCodeContainer.append(`<div class="col-sm-6">
-                <label>Chương ${i + 1}</label>
+                <button class="btn btn-link" onclick="detailPost('${sameSlugArray[i]}')" title="Xem chương">Chương ${i + 1}</button>
                 <button class="btn btn-sm btn-primary" onclick="toggleShow(this)">Hiện/Ẩn</button>
                 <button class="btn btn-sm btn-default" onclick="copyToClipboardMini(this)">Sao chép</button>
                 <textarea class="form-control bulk-togglable" rows="5">${result}</textarea>
@@ -263,6 +263,9 @@
           }
         );
       }
+    }
+    function detailPost(link) {
+      window.open(link);
     }
     var isToggleAll = false;
     function toggleShowAll() {
