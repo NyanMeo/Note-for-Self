@@ -47,7 +47,7 @@
                   href="link__chapterBefore"><span
                     style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">◄</span></a> <a
                   style="color:#fcfcfc;margin-right:5px;" href="link__tableOfContent"><span
-                    style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">Mục lục</span></a> <a
+                    style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;font-weight:bold;">Mục lục</span></a> <a
                   style="color:#fcfcfc;margin-right:5px;" href="link__chapterAfter"><span
                     style="background-color:#85ccd0;padding:5px 10px;border-radius:5px;">►</span></a></p>
               </textarea>
@@ -128,7 +128,7 @@
             <button type="button" class="btn btn-default" onclick="toggleShowAll()">
               Hiện/Ẩn tất cả
             </button>
-            <button type="button" class="btn btn-danger" onclick="resetAllInput()">
+            <button type="button" class="btn btn-danger" onclick="resetLinkBulkInput()">
               Reset All
             </button>
             <hr />
@@ -213,6 +213,7 @@
         genCodeArea = $("#genCodeArea"),
         genCodeContainer = $("#genCodeContainer__bulk");
       if (link && slug) {
+        genCodeContainer.empty();
         AjaxCall(
           "https://public-api.wordpress.com/rest/v1.1/sites/vivi3010.wordpress.com/posts/slug:" +
           link
@@ -228,16 +229,29 @@
               .filter(x => x.indexOf(slug) > -1);
 
             if (sameSlugArray.length > 0) {
-              for (let i = 0; i < sameSlugArray.length - 1; i++) {
-                let result = template.replace(
-                  "link__chapterBefore",
-                  sameSlugArray[i]
-                );
-                result = result.replace("link__tableOfContent", link);
-                result = result.replace(
-                  "link__chapterAfter",
-                  sameSlugArray[i + 1]
-                );
+              for (let i = 0; i < sameSlugArray.length; i++) {
+                let result = "";
+                if (i !== 0 && i !== sameSlugArray.length - 1) {
+                  result = template.replace(
+                    "link__chapterBefore",
+                    sameSlugArray[i - 1]
+                  );
+                  result = result.replace("link__tableOfContent", link);
+                  result = result.replace(
+                    "link__chapterAfter",
+                    sameSlugArray[i + 1]
+                  );
+                } else if (i === 0) {
+                  result = template.replace("link__chapterAfter", sameSlugArray[i + 1]);
+                  result = result.replace("link__tableOfContent", link);
+                } else {
+                  result = template.replace(
+                    "link__chapterBefore",
+                    sameSlugArray[i - 1]
+                  );
+                  result = result.replace("link__tableOfContent", link);
+                }
+
                 genCodeContainer.append(`<div class="col-sm-6">
                 <label>Chương ${i + 1}</label>
                 <button class="btn btn-sm btn-primary" onclick="toggleShow(this)">Hiện/Ẩn</button>
@@ -250,7 +264,20 @@
         );
       }
     }
-
+    var isToggleAll = false;
+    function toggleShowAll() {
+      if (!isToggleAll) {
+        $("textarea.bulk-togglable").addClass("collapse");
+      }
+      else {
+        $("textarea.bulk-togglable").removeClass("collapse");
+      }
+      isToggleAll = !isToggleAll;
+    }
+    function resetLinkBulkInput() {
+      $("#tableOfContent_bulk").val("");
+      $("#slug_bulk").val("");
+    }
     //helpers
     function changeFocusTab(key = 1) {
       tabKey = key;
@@ -277,21 +304,20 @@
       });
     }
     function copyToClipboardMini(el) {
-      $(el)
-        .siblings("textarea")
-        .select();
-      document.execCommand("copy");
-    }
-    var isToggleAll = false;
-    function toggleShowAll() {
-      if (!isToggleAll) {
-        $("textarea.bulk-togglable").addClass("collapse");
+      const textarea = $(el).siblings("textarea");
+      if (textarea.hasClass("collapse")) {
+        textarea.removeClass("collapse");
+        textarea.select();
+        document.execCommand("copy");
+        textarea.addClass("collapse");
       }
       else {
-        $("textarea.bulk-togglable").removeClass("collapse");
+        textarea.select();
+        document.execCommand("copy");
       }
-      isToggleAll = !isToggleAll;
+      $(el).text("Đã sao chép!");
     }
+
     function toggleShow(el) {
       const textarea = $(el).siblings("textarea");
       if (textarea.hasClass("collapse")) {
