@@ -1,10 +1,9 @@
 /**
  * author: Ant
  * current-workspace: Twine + Adventure
- * version: 0.2.0
+ * version: 0.2.1
  * change-log: 
- * - added save/load button
- * - modified save/load function to have character info
+ * - fixed save/load to be more specific
  */
 
 /**
@@ -135,85 +134,90 @@ window.setStageObject = function (stageName, objectName, property, value) {
  * Save/Load
  */
 window.saveData = {};
+window.isAutosave = true;
 
-window.saveGame = function () {
-	const currentPassage = window.story.currentPassage;
-	const { health, gold, inventory } = window.character;
-	window.saveData = {
-		currentPassage,
-		stages: window.stages,
-		character: {
-			health,
-			gold,
-			items: inventory.items.map(x => x),
-		},
-	};
-}
-
-window.loadGame = function () {
-	const { currentPassage, stages, character } = window.saveData;
-	if (currentPassage) {
-		const { health, gold, items } = character;
-		window.story.showPassage(currentPassage);
-		window.stages = stages;
-		character.health = health;
-		character.gold = gold;
-		character.inventory.items.clear();
-		character.inventory.items = items;
-	} else {
-		throw new Error("There is no save data!");
+/**
+ * Run when document loaded
+ */
+(function (funcName, baseObj) {
+	"use strict";
+	funcName = funcName || "docReady";
+	baseObj = baseObj || window;
+	var readyList = [];
+	var readyFired = false;
+	var readyEventHandlersInstalled = false;
+	function ready() {
+		if (!readyFired) {
+			readyFired = true;
+			for (var i = 0; i < readyList.length; i++) {
+				readyList[i].fn.call(window, readyList[i].ctx);
+			}
+			readyList = [];
+		}
 	}
-}
-
-	/**
-	 * Run when document loaded
-	 */
-	(function (funcName, baseObj) {
-		"use strict";
-		funcName = funcName || "docReady";
-		baseObj = baseObj || window;
-		var readyList = [];
-		var readyFired = false;
-		var readyEventHandlersInstalled = false;
-		function ready() {
-			if (!readyFired) {
-				readyFired = true;
-				for (var i = 0; i < readyList.length; i++) {
-					readyList[i].fn.call(window, readyList[i].ctx);
-				}
-				readyList = [];
-			}
+	function readyStateChange() {
+		if (document.readyState === "complete") {
+			ready();
 		}
-		function readyStateChange() {
-			if (document.readyState === "complete") {
-				ready();
-			}
+	}
+	baseObj[funcName] = function (callback, context) {
+		if (typeof callback !== "function") {
+			throw new TypeError("callback for docReady(fn) must be a function");
 		}
-		baseObj[funcName] = function (callback, context) {
-			if (typeof callback !== "function") {
-				throw new TypeError("callback for docReady(fn) must be a function");
-			}
-			if (readyFired) {
-				setTimeout(function () { callback(context); }, 1);
-				return;
+		if (readyFired) {
+			setTimeout(function () { callback(context); }, 1);
+			return;
+		} else {
+			readyList.push({ fn: callback, ctx: context });
+		}
+		if (document.readyState === "complete" || (!document.attachEvent && document.readyState === "interactive")) {
+			setTimeout(ready, 1);
+		} else if (!readyEventHandlersInstalled) {
+			if (document.addEventListener) {
+				document.addEventListener("DOMContentLoaded", ready, false);
+				window.addEventListener("load", ready, false);
 			} else {
-				readyList.push({ fn: callback, ctx: context });
+				document.attachEvent("onreadystatechange", readyStateChange);
+				window.attachEvent("onload", ready);
 			}
-			if (document.readyState === "complete" || (!document.attachEvent && document.readyState === "interactive")) {
-				setTimeout(ready, 1);
-			} else if (!readyEventHandlersInstalled) {
-				if (document.addEventListener) {
-					document.addEventListener("DOMContentLoaded", ready, false);
-					window.addEventListener("load", ready, false);
-				} else {
-					document.attachEvent("onreadystatechange", readyStateChange);
-					window.attachEvent("onload", ready);
-				}
-				readyEventHandlersInstalled = true;
-			}
+			readyEventHandlersInstalled = true;
 		}
-	})("docReady", window);
+	}
+})("docReady", window);
 
 docReady(function () {
-	document.querySelector(".panel-content").insertAdjacentHTML("beforeend", `<div class="row" style="justifyContent:space-around;"><button class="button red" onclick="window.saveGame()">Save</button><button class="button blue" onclick="window.loadGame()">Load</button></div>`)
+	window.saveGame = function () {
+		const currentPassage = window.story.currentPassage;
+		const { health, gold, inventory } = window.character;
+		window.saveData = {
+			currentPassage,
+			stages: window.stages,
+			character: {
+				health,
+				gold,
+				items: inventory.items.map(x => x),
+			},
+		};
+	}
+
+	window.loadGame = function () {
+		const { currentPassage, stages, character } = window.saveData;
+		if (currentPassage) {
+			const { health, gold, items } = character;
+			window.stages = stages;
+			window.character.health = health;
+			window.character.gold = gold;
+			window.story.showPassage(currentPassage);
+			window.character.inventory.items.replace(items);
+		} else {
+			throw new Error("There is no save data!");
+		}
+	}
+
+	window.suddenDeath = function () {
+		window.character.damage(window.character.health);
+		document.querySelector("#saveBtn").style.display = "none";
+	}
+
+	document.querySelector(".panel-content").insertAdjacentHTML("beforeend", `<div id="saveLoadBtns" class="row" style="display:none;justify-content:space-around;"><button id="saveBtn" class="button red" onclick="window.saveGame()">Save</button><button class="button blue" onclick="window.loadGame()">Load</button></div>`);
 });
