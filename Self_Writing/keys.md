@@ -6,3 +6,4 @@ Kẻ trong hang động cố gắng bò trườn và thoát ra, tới một khu 
 Cáo tỉ thấy mọi kiếp, nơi mình tìm đến kẻ kia, trước mắt nàng là một vị thần nào đó với đống dây dợ trên đầu đang hỏi nàng có muốn tiếp tục không, nàng chọn có, và tiếp tục trong khi ở đầu bên kia là một người con trai đang đẫm mình trong dung môi và mơ tiếp
 Sự tích con bướm đêm
 Thế giới phát triển cao, con người giả lập được qua giấc mơ, và một người không may bị chìm đắm trong đó, một người khác lao vào hòng đưa cậu ta ra
+Chiếc nhẫn của chị bán hàng, nhẫn đính hôn của một đôi du học sinh nam bên Nhật, song do không được chấp thuận, một người đã tự vẫn, người còn lại vì ám ảnh mà bán đi chiếc nhẫn, và sống dằn vặt suốt quãng đời còn lại

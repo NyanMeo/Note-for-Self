@@ -100,7 +100,7 @@ Cáo tỉ cũng không cầm được nước mắt, sau bao nhiêu thời gian 
 
 ---
 
-Năm 131x, quân Meng tràn vào đất nước, chúng thẳng tay tàn sát bất cứ ai khởi nghĩa chống lại. Ne Noi lúc này là một trong những danh tiếng bị chúng ghim từ đầu, đang bị chúng lùng sục phía sau. Meng khôn lỏi, mang theo cả chó để lùng bắt bằng được. Ne Noi, do nắm chắc địa hình núi Chilinh, bèn nấp sau một bụi cỏ, quần áo trang bị vứt hết sang các bụi tứ tung nhằm đánh lạc hướng, chỉ giữ một thanh gươm bên mình.
+Năm 140x, quân Meng tràn vào đất nước, chúng thẳng tay tàn sát bất cứ ai khởi nghĩa chống lại. Ne Noi lúc này là một trong những danh tiếng bị chúng ghim từ đầu, đang bị chúng lùng sục phía sau. Meng khôn lỏi, mang theo cả chó để lùng bắt bằng được. Ne Noi, do nắm chắc địa hình núi Chilinh, bèn nấp sau một bụi cỏ, quần áo trang bị vứt hết sang các bụi tứ tung nhằm đánh lạc hướng, chỉ giữ một thanh gươm bên mình.
 
 Chính lúc ấy, bụi rậm phía sau ông lao xao lên, Ne Noi toan rút gươm ra để chiến đấu thì một mùi hương đặc biệt toả ra. Mùi trà thơm ngát, và Cáo tỉ xuất hiện. Hai người không nói cũng chẳng rằng, ôm trọn lấy nhau trong vòng tay và trao cho nhau nụ hôn ngào ngạt. Tiếng chó sủa cứ mỗi lúc một gần, Ne Noi vội vàng đẩy Cáo tỉ ra.
 
