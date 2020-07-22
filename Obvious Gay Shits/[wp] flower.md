@@ -25,7 +25,9 @@ Tâm tình Ant thì có thể, chứ lưỡi thì không. Cái lưỡi không x�
 Bất chợt, cái lưỡi dừng lại. Ồ may quá, bản ngã của Ant đã thức tỉnh, ngăn cản cơn thú tính của y. Phần về hoa, cánh bung ra hết cỡ, người ta thường gọi là trạng thái bung lụa, thân bông hoa cũng cong ngửa ra sau, các chiếc lá cũng căng ra, mơn mởn. Hoa không rên mà toả mùi hương, từ thơm thơm thánh thót, căn phòng đã đậm đặc trộn lẫn mồ hôi, nhưng mùi hương hoa đã đậm hơn rất nhiều. Nếu Comfort nắm được thì đắt hàng phải biết.
 
 Luyên thuyên chút thôi, lưỡi Ant chỉ không ngoáy thôi, nó bắt đầu lướt chầm chậm ra ngoài, rồi tụt ra khỏi nhuỵ, nước bắn tung ra.
+
 "...b... bố... đừng dừng lại!" Cánh hoa lại bừng to hơn, nhuỵ vẫn lề dề nước nôi, hương vẫn toả ra ngạt ngào. Hoa khẩn khoản...
+
 "làm ơn đi bố, con muốn nữa, làm ơn...!"
 
 Lưỡi Ant bắt đầu di chuyển, nó bôi thứ nước nhiệm màu kia xung quanh tán lá, thân hoa. Hoa lại rùng mình, chỗ nào vừa khô lưỡi lại đá vào giữa vấy nước tiếp. Rồi cái lưỡi ấy lại chui vào giữa, đảo đảo chán chê lại chui ra. Cứ thế, cứ thế...

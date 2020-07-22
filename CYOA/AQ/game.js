@@ -135,6 +135,8 @@ window.setStageObject = function (stageName, objectName, property, value) {
  */
 window.saveData = {};
 window.isAutosave = true;
+window.kittyHealing = [];
+window.eventOnce = [];
 
 /**
  * Run when document loaded
@@ -209,6 +211,7 @@ docReady(function () {
 			window.character.gold = gold;
 			window.story.showPassage(currentPassage);
 			window.character.inventory.items.replace(items);
+			document.querySelector("#saveBtn").style.display = "block";
 		} else {
 			throw new Error("There is no save data!");
 		}
