@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foot Fetish Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 30px 45px;
+      border-radius: 4px;
+      background-color: #4d86cf;
+      color: white;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-sector {
+      margin: 12px 0;
+    }
+    .form-sector input, select, textarea {
+      font-size: 1.02em;
+      padding: 8px;
+      border-radius: 4px;
+      border-width: 0;
+    }
+    .form-sector__label {
+      font-weight: bold;
+      margin-bottom: 4px;
+      font-size: 1.18em;
+    }
+    .form-sector__box {
+      font-size: 1.02em;
+    }
+    .form-title {
+      font-size: 2em;
+    }
+    .form-subtitle {
+      font-size: 1.25em;
+      font-style: italic;
+    }
+    .form-button {
+      font-weight: bold;
+      color: white;
+      padding: 12px;
+      background-color: #5fbfe6;
+      border-radius: 4px;
+      border-width: 0;
+      text-transform: capitalize;
+      margin-top: 4px;
+      font-size: 1.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header text-center">
+      <h1 id="title" class="form-title">Foot Fetish Survey Form</h1>
+      <p id="description" class="form-subtitle">Thank you for taking the time to help us improve our fetish knowledge</p>
+    </div>
+    <form id="survey-form" class="form-wrapper flex-column">
+      <div class="form-sector flex-column">
+        <label id="name-label" class="form-sector__label">Name</label>
+        <input required id="name" placeholder="Enter your name" type="text" name="name" />
+      </div>
+      <div class="form-sector flex-column">
+        <label id="email-label" class="form-sector__label">Email</label>
+        <input required id="email" placeholder="Enter your email" type="email" name="email" />
+      </div>
+      <div class="form-sector flex-column">
+        <label id="number-label" class="form-sector__label">Age(optional)</label>
+        <input id="number" placeholder="Enter your age" type="number" min="1" max="300" name="age" />
+      </div>
+      <div class="form-sector flex-column">
+        <label class="form-sector__label">Which option describes your sexual type?</label>
+        <select id="dropdown">
+          <option value="">--Choose your type--</option>
+          <option value="dom">Domination</option>
+          <option value="sub">Submissive</option>
+        </select>
+      </div>
+      <div class="form-sector flex-column">
+        <label class="form-sector__label">Which kind of partner do you want to find?</label>
+        <div class="form-sector__box">
+          <input type="radio" name="partner" value="master" />
+          <label for="master">Master</label>
+          <input type="radio" name="partner" value="slave" />
+          <label for="slave">Slave</label>
+        </div>
+      </div>
+      <div class="form-sector flex-column">
+        <label class="form-sector__label">What are activities you want to do with your partner?</label>
+        <div class="form-sector__box">
+          <input type="checkbox" name="activity" value="bondage">
+          <label for="bondage">Bondage</label>
+          <input type="checkbox" name="activity" value="rim-job">
+          <label for="rim-job">Rim Job</label>
+          <input type="checkbox" name="activity" value="piss-drinking">
+          <label for="piss-drinking">Piss Drinking</label>
+        </div>
+      </div>
+      <div class="form-sector flex-column">
+        <label class="form-sector__label">Describe yourself</label>
+        <textarea name="description" rows="5" placeholder="Keep it short so that right one can match you!"></textarea>
+      </div>
+      <div class="text-center">
+        <button id="submit" type="submit" class="form-button">Send your thought</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
