@@ -42,7 +42,7 @@ Giọng Ant trầm ấm, thi thoảng đảo âm lên cao chót rồi vỡ vụn
 
 Tiếng nấc lên từng hồi, không phải chỉ Giag mà cả nhiều nhân sự khác thuộc phòng phát triển sản phẩm. Tại sao lại tồn tại cái lỗi ngớ ngẩn này chứ, hay đây chỉ là "một tính năng vàng" mà Ant vẫn thường đề cập. Phải chăng chính là cái tính năng khiến cho cỗ máy này có thể hoạt động tiếp trong vài trăm năm tới.
 
-"Các cậu, làm ơn, hãy đưa chống tôi ra khỏi đó" - Giag nghẹn ngào, cô không thể chịu thêm nữa.
+"Các cậu, làm ơn, hãy đưa anh ấy ra khỏi đó" - Giag nghẹn ngào, cô không thể chịu thêm nữa.
 
 Tất cả mọi cộng sự đều lắc đầu, chả cách nào đưa một người ra khỏi giấc mơ cả. Ant đã mất ý thức hoàn toàn, giờ anh đang chìm trong những cơn mơ siêu tưởng, đến độ quên mất việc mình vừa làm, hay mình là ai.
 
