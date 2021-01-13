@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyancat Shipping Service</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      background-color: #fcdef0;
+      font-family: 'Courier New', Courier, monospace;
+      min-height: 100vh;
+    }
+
+    #header {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      min-height: 80px;
+      background-color: #fcdef0;
+    }
+
+    #header-img {
+      max-width: 150px;
+      max-height: 150px;
+      object-fit: cover;
+    }
+
+    .header-container {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-container {
+      min-width: 30%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a.nav-link, a.nav-link:link {
+      font-size: 1.25em;
+      font-weight: 500;
+      color: black;
+      text-decoration: none;
+    }
+
+    a.nav-link:hover {
+      color: #ff80ce;
+      font-weight: bold;
+    }
+
+    .content-container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .content-container__child {
+      margin: 16px 0;
+    }
+
+    .form-container {
+      width: 100%;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-container__title {
+      font-size: 1.5em;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .form-container__input {
+      padding: 8px;
+      margin-bottom: 12px;
+      max-width: 200px;
+      min-width: 150px;
+    }
+
+    .form-container__button {
+      padding: 8px;
+      text-transform: uppercase;
+      font-weight: 600;
+      background-color: #ff80ce;
+      border: 0;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-container__button:hover {
+      background-color: #fc6bc4;
+    }
+
+    #feature {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .feature-wrapper {
+      width: 100%;
+      display: flex;
+      padding: 16px;
+    }
+
+    .feature-wrapper__icon {
+      min-width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .feature-wrapper__icon-svg {
+      width: 48px;
+      height: 48px;
+    }
+
+    .feature-wrapper__content {
+      min-width: 80%;
+    }
+
+    .feature-wrapper__content-title {
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+
+    .feature-wrapper__content-subtitle {
+      font-size: 1.25em;
+    }
+
+    #pricing {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+    }
+
+    .pricing-container {
+      min-width: 30%;
+      border: 1px solid #fc6bc4;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .pricing-title {
+      font-size: 1.35em;
+      background-color: #fc6bc4;
+      padding: 8px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .pricing-description {
+      background-color: white;
+      padding: 12px;
+    }
+
+    .pricing-description__price {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .pricing-description__text--container {
+      margin-bottom: 8px;
+    }
+
+    .pricing-description__text {
+      font-size: 1.25em;
+      line-height: 1.6;
+    }
+
+    .pricing-description__select {
+      padding: 8px;
+      text-transform: uppercase;
+      background-color: #ff80ce;
+      border: 0;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      width: auto;
+    }
+
+    .pricing-description__select:hover {
+      font-weight: 600;
+      background-color: #fc6bc4;
+    }
+
+    #footer {
+      background-color: #fc6bc4;
+      padding: 16px;
+      color: white;
+    }
+
+    .footer-link__container {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    .footer-link {
+      font-size: 1.25em;
+      cursor: pointer;
+    }
+
+    .footer-link:hover {
+      font-weight: 600;
+    }
+
+    .footer-link:not(:first-of-type) {
+      margin-left: 8px;
+    }
+
+    .footer-copyright {
+      margin-top: 8px;
+      width: 100%;
+      font-size: 0.8em;
+      text-align: right;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .header-container {
+        flex-direction: column;
+      }
+
+      .nav-container {
+        margin-top: 4px;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-link {
+        line-height: 1.6;
+      }
+
+      #pricing {
+        flex-direction: column;
+      }
+
+      .pricing-container {
+        width: 100%;
+      }
+
+      .pricing-container:not(:last-of-type) {
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <div class="header-container">
+      <img id="header-img" alt="company-logo"
+        src="https://i.dlpng.com/static/png/1700763-nyan-cat-zps4adb5b0epng-nyan-cat-png-767_243_preview.png" />
+      <nav class="nav-container" id="nav-bar">
+        <a class="nav-link" href="#feature">Features</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#contact-us">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="content-container">
+    <div id="contact-us" class="content-container__child">
+      <form id="form" class="form-container" action="https://www.freecodecamp.com/email-submit">
+        <div class="form-container__title">Awesome and amazing shipping service</div>
+        <input placeholder="Enter your email address" id="email" type="email" name="email"
+          class="form-container__input" />
+        <input type="submit" id="submit" value="Get started" class="form-container__button">
+      </form>
+    </div>
+    <div id="feature" class="content-container__child">
+      <div class="feature-wrapper">
+        <div class="feature-wrapper__icon">
+          <svg class="feature-wrapper__icon-svg" viewBox="0 0 24 24">
+            <path fill="#ff80ce"
+              d="M12,6A11,11 0 0,0 1,17H3C3,12.04 7.04,8 12,8C16.96,8 21,12.04 21,17H23A11,11 0 0,0 12,6M12,10C8.14,10 5,13.14 5,17H7A5,5 0 0,1 12,12A5,5 0 0,1 17,17H19C19,13.14 15.86,10 12,10Z" />
+          </svg>
+        </div>
+        <div class="feature-wrapper__content">
+          <div class="feature-wrapper__content-title">Amazing Awesomeness</div>
+          <div class="feature-wrapper__content-subtitle">Our shipper is full with awesomeness.</div>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="feature-wrapper__icon">
+          <svg class="feature-wrapper__icon-svg" viewBox="0 0 24 24">
+            <path fill="#ff80ce"
+              d="M3,7C1.89,7 1,7.89 1,9V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V13C23,11.89 22.11,11 21,11L18,7H3M15,8.5H17.5L19.46,11H15V8.5M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z" />
+          </svg>
+        </div>
+        <div class="feature-wrapper__content">
+          <div class="feature-wrapper__content-title">Fast Shipping</div>
+          <div class="feature-wrapper__content-subtitle">We made sure you receive your products as soon as you ordered.
+            We also provide cuteness if you are not satisfied.</div>
+        </div>
+      </div>
+      <div class="feature-wrapper">
+        <div class="feature-wrapper__icon">
+          <svg class="feature-wrapper__icon-svg" viewBox="0 0 24 24">
+            <path fill="#ff80ce"
+              d="M9 10A3.04 3.04 0 0 1 12 7A3.04 3.04 0 0 1 15 10A3.04 3.04 0 0 1 12 13A3.04 3.04 0 0 1 9 10M12 19L16 20V16.92A7.54 7.54 0 0 1 12 18A7.54 7.54 0 0 1 8 16.92V20M12 4A5.78 5.78 0 0 0 7.76 5.74A5.78 5.78 0 0 0 6 10A5.78 5.78 0 0 0 7.76 14.23A5.78 5.78 0 0 0 12 16A5.78 5.78 0 0 0 16.24 14.23A5.78 5.78 0 0 0 18 10A5.78 5.78 0 0 0 16.24 5.74A5.78 5.78 0 0 0 12 4M20 10A8.04 8.04 0 0 1 19.43 12.8A7.84 7.84 0 0 1 18 15.28V23L12 21L6 23V15.28A7.9 7.9 0 0 1 4 10A7.68 7.68 0 0 1 6.33 4.36A7.73 7.73 0 0 1 12 2A7.73 7.73 0 0 1 17.67 4.36A7.68 7.68 0 0 1 20 10Z" />
+          </svg>
+        </div>
+        <div class="feature-wrapper__content">
+          <div class="feature-wrapper__content-title">Quality Assurance</div>
+          <div class="feature-wrapper__content-subtitle">For every purchase you make, we will ensure there are no
+            damages or faults and we will open the seal for you.</div>
+        </div>
+      </div>
+    </div>
+    <div class="content-container__child">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/SkgTxQm9DWM" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div id="pricing" class="content-container__child">
+      <div class="pricing-container">
+        <div class="pricing-title">Hobby</div>
+        <div class="pricing-description">
+          <div class="pricing-description__price">$10</div>
+          <div class="pricing-description__text--container">
+            <div class="pricing-description__text">Lorem Ipsum</div>
+            <div class="pricing-description__text">Lorem Ipsum</div>
+            <div class="pricing-description__text">Lorem Ipsum</div>
+          </div>
+          <div class="pricing-description__select">Select</div>
+        </div>
+      </div>
+      <div class="pricing-container">
+        <div class="pricing-title">More Hobby</div>
+        <div class="pricing-description">
+          <div class="pricing-description__price">$100</div>
+          <div class="pricing-description__text--container">
+            <div class="pricing-description__text">Lorem Ipsum</div>
+            <div class="pricing-description__text">Lorem Ipsum</div>
+            <div class="pricing-description__text">Lorem Ipsum</div>
+          </div>
+          <div class="pricing-description__select">Select</div>
+        </div>
+      </div>
+      <div class="pricing-container">
+        <div class="pricing-title">Not Hobby</div>
+        <div class="pricing-description">
+          <div class="pricing-description__price">$1000</div>
+          <div class="pricing-description__text--container">
+            <div class="pricing-description__text">Lorem Ipsum</div>
+            <div class="pricing-description__text">Lorem Ipsum</div>
+            <div class="pricing-description__text">Lorem Ipsum</div>
+          </div>
+          <div class="pricing-description__select">Select</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="content-container footer-container">
+      <div class="footer-link__container">
+        <div class="footer-link">Privacy</div>
+        <div class="footer-link">Term</div>
+        <div class="footer-link">Contact</div>
+      </div>
+      <div class="footer-copyright">Copyright <span id="copyright-year"></span>, Joke Company</div>
+    </div>
+  </div>
+  <script>
+    function getCurrentYear() {
+      window.document.querySelector('#copyright-year').innerHTML = (new Date()).getFullYear()
+    }
+    getCurrentYear()
+  </script>
+</body>
+
+</html>
