@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      background-color: #fcdef0;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .base-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      padding: 0 16px;
+    }
+
+    .nav-container {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      min-height: 60px;
+      background-color: #ff95d6;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 24px;
+    }
+
+    a,
+    a:link {
+      font-size: 1.25em;
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      font-weight: 600;
+    }
+
+    a.nav-link:not(:last-of-type) {
+      margin-right: 16px;
+    }
+
+    #welcome-section {
+      min-height: 100vh;
+      background-color: #b44772;
+    }
+
+    .base-title {
+      color: #ff80ce;
+      font-size: 2.5em;
+      margin: 0.35em 0;
+    }
+
+    .base-subtitle {
+      color: #ffb0e1;
+      font-size: 1.65em;
+    }
+
+    #projects>h2 {
+      font-size: 2.2em;
+      margin: 0.25em 0;
+      border-bottom: 0.25em solid black;
+      margin-bottom: 20px;
+    }
+
+    .project-container {
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .project-tile {
+      width: 30%;
+    }
+
+    .project-tile__image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .project-tile__name {
+      padding: 8px;
+      text-align: center;
+      background-color: #ff95d6;
+    }
+
+    #contact {
+      background-color: #b44772;
+      color: white;
+    }
+
+    #profile-link {
+      margin-top: 16px;
+    }
+
+    #footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      min-height: 60px;
+      background-color: #ff95d6;
+      padding: 0 24px;
+      color: white;
+      font-size: 1.25em;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .project-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-tile {
+        width: 80%;
+      }
+
+      .project-tile:not(:last-of-type) {
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar" class="nav-container">
+    <a class="nav-link" href="#welcome-section">About</a>
+    <a class="nav-link" href="#projects">Work</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </nav>
+  <div id="welcome-section" class="base-container">
+    <h1 class="base-title">Hey, I am Ant</h1>
+    <h3 class="base-subtitle">A not-specificed-stack developer</h3>
+  </div>
+  <div id="projects" class="base-container">
+    <h2>These are some of my projects</h2>
+    <div class="project-container">
+      <a class="project-tile" href="https://apps.apple.com/vn/app/eofficevneh/id1459064949">
+        <img class="project-tile__image" alt="project-profile-image"
+          src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/df/d2/61/dfd261fc-ea52-3e96-ef2d-6dd154914f4b/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/230x0w.png">
+        <div class="project-tile__name">Eoffice App</div>
+      </a>
+      <a class="project-tile">
+        <img class="project-tile__image" alt="project-profile-image"
+          src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/df/d2/61/dfd261fc-ea52-3e96-ef2d-6dd154914f4b/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/230x0w.png">
+        <div class="project-tile__name">Eoffice App</div>
+      </a>
+      <a class="project-tile">
+        <img class="project-tile__image" alt="project-profile-image"
+          src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/df/d2/61/dfd261fc-ea52-3e96-ef2d-6dd154914f4b/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/230x0w.png">
+        <div class="project-tile__name">Eoffice App</div>
+      </a>
+    </div>
+  </div>
+  <div id="contact" class="base-container">
+    <h1 class="base-title">Let's work together!</h1>
+    <div class="base-subtitle">Coffee, tea, or head?</div>
+    <a id="profile-link" href="https://github.com/PurpleLover" target="_blank">Github</a>
+  </div>
+  <div id="footer">
+    <div class="footer-copyright">Created by Ant</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ant's fried rice recipe</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      max-width: 1120px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .container--nav {
+      width: 30%;
+      position: fixed;
+      top: 0;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      background-color: white;
+    }
+
+    .container--nav header {
+      font-size: 1.8em;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    a.nav-link,
+    a.nav-link:link {
+      color: black;
+      font-size: 1.5em;
+      text-decoration: none;
+      line-height: 1.6;
+    }
+
+    a.nav-link:hover {
+      color: #ff80ce;
+    }
+
+    .container--main {
+      width: 70%;
+      left: 30%;
+      position: absolute;
+    }
+
+    .main-section {
+      padding: 8px 16px;
+    }
+
+    .main-section:first-of-type {
+      padding: 16px;
+    }
+
+    .main-section header {
+      font-size: 1.5em;
+    }
+
+    .main-section p,
+    li {
+      font-size: 1.25em;
+    }
+
+    .main-section code {
+      font-size: 1.1em;
+      padding: 2px;
+      background-color: #fcdef0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .container--nav {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+
+      .container--main {
+        width: 100%;
+        left: 0;
+        position: relative;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav id="navbar" class="container--nav">
+      <header>Ant's Fried Rice</header>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#what_you_should_know">What you should know</a>
+      <a class="nav-link" href="#recipe">Recipe</a>
+      <a class="nav-link" href="#how_it_made">How it made</a>
+      <a class="nav-link" href="#decoration">Decoration</a>
+    </nav>
+    <main id="main-doc" class="container--main">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>Rice is one of important dishes in Southern East Asian usual meals. Especially in Vietnam, people there might
+          eat at least one bowl of rice for each meal, from morning to evening, everyday. Rice is also an traditional
+          material in Vietnam. And for a rice exported country, eating rice everyday likes western people eat bread and
+          drink milk.</p>
+        <p>The content of rice is rich of powder and sugar, which give human body very much energy for work. Most
+          foreign
+          people think Vietnamese only eat boiled rice, but people there also make a large dish from rice, such as
+          "phở",
+          "bún", "bánh chưng", etc. With milk, you can make butter or cheese. With rice, you can make many more dish
+          with
+          creative way.</p>
+        <p>For this documentation, I will provide how to make Fried Rice. I am pretty sure it is not a hard dish to
+          make,
+          but most of you readers don't know my style, in other word, my recipe.</p>
+      </section>
+      <section class="main-section" id="what_you_should_know">
+        <header>What you should know</header>
+        <p>Before we move to the recipe part, you should learn to do the following:</p>
+        <ul>
+          <li>How to make boiled rice</li>
+          <li>How to use chopsticks</li>
+          <li>How to not get crazy with the flavor of my dish (Of course, you can't)</li>
+        </ul>
+        <p>That's all of my requirement, if you have all of it, move on.</p>
+      </section>
+      <section class="main-section" id="recipe">
+        <header>Recipe</header>
+        <p>Alright, when you have at least 2 of 3 of my requirement in previous section, let's get to recipe part to
+          know
+          what ingredients to cook this fried rice dish.</p>
+        <ul>
+          <li>1 bowl of cold boiled rice</li>
+          <li>2 chicken eggs</li>
+          <li>1 spoon of mayonaise</li>
+          <li>1 coffee spoon of spice</li>
+          <li>1 coffee spoon of spicy sauce</li>
+          <li>1 coffee spoon of fish sauce</li>
+        </ul>
+        <p>Let's settle these to each bowl around your stove so you can put in in your cooking instrument fast.</p>
+      </section>
+      <section class="main-section" id="how_it_made">
+        <header>How it made</header>
+        <p>First, you need a pan, you can choose the size if you want. If you cook for yourself, you only need small
+          one.
+          If for your girl friend, use the medium one. If for you whole family, use big large pan. As this is a
+          technical
+          documentation, I will use some condition pseudo code to explain how to choose a pan.</p>
+        <code>pan_size = cook_for_me ? small : cook_for_girl ? medium : cook_for_family ? large : undefined</code>
+        <p>Make sure your pan is not wet by put in on stove. Heat it until you don't see any water on the pan surface.
+          Then pour oil in. If you pour oil when there is water, you'll make firework in your kitchen. And we all know
+          you
+          should not do it. Let's do the code again.</p>
+        <code>pan_has_water ? heat() : pour_oil()</code>
+        <p>After both of your pan and oil is heated, pour your bowl of rice in the pan. Stir it a little to make it warm
+          up. Don't be harsh, rice god does not want his prayers crushed inside a hot battle field. Then, drop your eggs
+          in, make sure you remove their shells, God Rice again does not want to see his prayers with chicken shell, as
+          chicken eats rice. And keep stiring until eggs and rice mix together, and the eggs are not raw, you don't want
+          to get H5N1, you know.</p>
+        <p>Turn off your stove, let it be for a few minutes, then put the mixture to the serving bowl. Tada, fried rice
+          like Vietnamese people always do. Nearly done.</p>
+      </section>
+      <section class="main-section" id="decoration">
+        <header>Decoration</header>
+        <p>You've made a bowl of fried rice. Now, to make it Ant style. Pour all other ingredients on top and eat it
+          with
+          chopsticks.</p>
+        <p>You've learned how to make fried rice my way, now invent yours. For me, I need some more code section, so you
+          don't need to see the followings:</p>
+        <code>this is the reason I hate doing this certificate projects</code>
+        <p>This</p>
+        <code>as I cannot make it by my personal things</code>
+        <p>And this</p>
+        <code>but you guys have taught me well, so be it</code>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
